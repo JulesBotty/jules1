@@ -5,8 +5,9 @@
   "main": "server.js",
   "scripts": {
     "frontend": "npm start --prefix ../frontend",
+    "backend": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "concurrently \"npm run frontend\" nodemon server.js "
+    "dev": "concurrently \"npm run frontend\" \"npm run backend\" "
   },
   "author": "",
   "license": "ISC",
